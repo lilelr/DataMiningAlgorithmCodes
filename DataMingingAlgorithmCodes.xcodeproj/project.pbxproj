@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DEE0F2511E938F6F00C14E5E /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DEE0F2501E938F6F00C14E5E /* main.cpp */; };
+		DE440DC21E9CA32900947F53 /* BP.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DE440DC11E9CA32900947F53 /* BP.cpp */; };
+		DE440DC51E9CBF1500947F53 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DE440DC41E9CBF1500947F53 /* main.cpp */; };
+		DEE0F2511E938F6F00C14E5E /* Apriori.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DEE0F2501E938F6F00C14E5E /* Apriori.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,8 +25,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		DE440DC11E9CA32900947F53 /* BP.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BP.cpp; sourceTree = "<group>"; };
+		DE440DC31E9CB46900947F53 /* BP.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BP.h; sourceTree = "<group>"; };
+		DE440DC41E9CBF1500947F53 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		DEE0F24D1E938F6F00C14E5E /* DataMingingAlgorithmCodes */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DataMingingAlgorithmCodes; sourceTree = BUILT_PRODUCTS_DIR; };
-		DEE0F2501E938F6F00C14E5E /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		DEE0F2501E938F6F00C14E5E /* Apriori.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Apriori.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +62,10 @@
 		DEE0F24F1E938F6F00C14E5E /* DataMingingAlgorithmCodes */ = {
 			isa = PBXGroup;
 			children = (
-				DEE0F2501E938F6F00C14E5E /* main.cpp */,
+				DEE0F2501E938F6F00C14E5E /* Apriori.cpp */,
+				DE440DC11E9CA32900947F53 /* BP.cpp */,
+				DE440DC31E9CB46900947F53 /* BP.h */,
+				DE440DC41E9CBF1500947F53 /* main.cpp */,
 			);
 			path = DataMingingAlgorithmCodes;
 			sourceTree = "<group>";
@@ -118,7 +126,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DEE0F2511E938F6F00C14E5E /* main.cpp in Sources */,
+				DEE0F2511E938F6F00C14E5E /* Apriori.cpp in Sources */,
+				DE440DC21E9CA32900947F53 /* BP.cpp in Sources */,
+				DE440DC51E9CBF1500947F53 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,6 +249,7 @@
 				DEE0F2561E938F6F00C14E5E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
