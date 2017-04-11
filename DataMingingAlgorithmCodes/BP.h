@@ -9,13 +9,13 @@
 #ifndef BP_h
 #define BP_h
 
-#include <stdio.h>
-#include <iostream>
+#include<iostream>
 #include <math.h>
 #include <stdlib.h>
 #include <time.h>
 #include <fstream>
 using namespace std;
+
 #define RANNDOM rand()/32767.0 // 0~1 随机数生成函数
 
 const int Layer_Max=5;//

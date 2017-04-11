@@ -135,7 +135,7 @@ void BP::Train() {
     double err = 0.0;
     ofstream Out_count("Out_count.txt", ios::out);
     //把其中的5个权系数的变化保存到文件里
-    ofstream outWFile1("W[2][0][0].txt", ios::out);
+    ofstream outWFile1("/Users/yuxiao/ClionProjects/DataMiningAlgorithmCodes/DataMingingAlgorithmCodes/W[2][0][0].txt", ios::out);
     ofstream outWFile2("W[2][1][1].txt", ios::out);
     ofstream outWFile3("W[1][0][0].txt", ios::out);
     ofstream outWFile4("W[1][1][0].txt", ios::out);
@@ -144,7 +144,7 @@ void BP::Train() {
     while (ok < 441) {
         count++;
         //20个样本输入
-        for (int i = 0, ok = 0; i < InMax; i++) {
+        for (int i = 0; i < InMax; i++) {
             for (j = 0; j < InMax; j++) {
                 Out = NetWorkOut(i, j);
                 AllLayer_D(i, j);
@@ -158,7 +158,7 @@ void BP::Train() {
             }
         }
 
-        if ((count % 1000) == 0) {//每1000次，保存权系数
+        if ((count % 1) == 0) {//每100次，保存权系数
             cout << count << "      " << err << endl;
             Out_count << count << ",";
             Out_Error << err << ",";
