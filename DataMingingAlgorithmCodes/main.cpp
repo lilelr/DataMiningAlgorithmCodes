@@ -7,7 +7,6 @@
 //
 
 #include "BP.h"
-#include <stdio.h>
 
 int main(){
     BP B; //生成一个BP 类对象B

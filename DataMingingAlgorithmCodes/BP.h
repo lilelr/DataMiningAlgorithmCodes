@@ -23,8 +23,7 @@ const double PI = 3.1415927; // 圆周率
 const int Layer_number[Layer_Max]= {2,4,4,2,1};
 const int Neural_Max=4;//神经网络各层最大神经元个数
 const int InMax=21;//样本输入的个数
-ofstream Out_W_File("All_W.txt",ios::out) ;
-ofstream Out_Error("Error.txt",ios::out) ;
+
 
 // 定义类 BP
 class BP
